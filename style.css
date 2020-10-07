@@ -63,7 +63,13 @@ body {
 }
 
 @media screen and (min-width: 350px) and (max-width: 580px) {
+    body {
+        margin-top: 4rem
+    }
+
     .wrapper {
         flex-direction: column;
+        margin-top: 2rem;
     }
+
 }
