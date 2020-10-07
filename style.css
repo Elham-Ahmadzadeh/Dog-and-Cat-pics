@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .result {
@@ -37,7 +38,9 @@ body {
 
 }
 
-button {
+#catBtn,
+#dogBtn {
+
     background-color: darksalmon;
     border: 0;
     border-radius: 4px;
@@ -49,10 +52,18 @@ button {
 
 }
 
-button:active {
+#catBtn:active,
+#dogBtn:active {
     transform: scale(0.98);
 }
 
-button:focus {
+#catBtn:focus,
+#dogBtn:focus {
     outline: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    .wrapper {
+        flex-direction: column;
+    }
 }
